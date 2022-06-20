@@ -78,7 +78,6 @@ bool mftpi::is_directory(const std::string &filepath) const
   return ctrl.receive().contains("550");
 }
 
-#include <QDebug>
 bool mftpi::transfer_file(
   const std::filesystem::path &local_path,
   const std::filesystem::path &remote_path,
